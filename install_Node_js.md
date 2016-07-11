@@ -10,3 +10,4 @@ Con el fin de obtener esta versión, sólo tenemos que utilizar el gestor de paq
 Si el paquete en los repositorios se adapte a sus necesidades, esto es todo lo que necesita hacer para ponerse en marcha con Node.js. En la mayoría de los casos, usted también desea instalar también la NGP, que es el gestor de paquetes Node.js. Puede hacer esto escribiendo:
 
     sudo apt-get install npm
+    sudo ln -s /usr/bin/nodejs /usr/bin/node

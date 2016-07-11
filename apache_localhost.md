@@ -59,8 +59,6 @@ Moveremos la posicion de index.php hasta la primera.
 
     DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
 
-    DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
-
 Guardaremos el archivo y reiniciaremos el servidor Apache para que aplique esos cambios a la configuración.
 
     sudo service apache2 restart

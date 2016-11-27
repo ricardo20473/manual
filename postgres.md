@@ -6,7 +6,7 @@
         alter user postgres with password 'postgres';
         \q
         exit
-    sudo apt-get install ppgadmin3
+    sudo apt-get install pgadmin3
     sudo apt-get install php5-pgsql
 
 

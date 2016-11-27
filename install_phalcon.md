@@ -8,6 +8,7 @@ Para instalar Phalcon en Ubuntu es necesario seguir estos pasos:
     sudo apt-add-repository ppa:phalcon/stable
     sudo apt-get update
     sudo apt-get install php5-phalcon
+    sudo apt-get install php5-redis
     sudo a2enmod rewrite
     sudo service apache2 restart
     sudo nano /etc/apache2/sites-available/000-default.conf

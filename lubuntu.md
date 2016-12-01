@@ -16,3 +16,8 @@
     sudo apt-get install gimp
     sudo apt-get install gimp-help-es
 
+## Instalar gnome-screenshot
+
+    sudo apt-get update
+    sudo apt-get install gnome-screenshot
+

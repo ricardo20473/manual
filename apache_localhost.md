@@ -77,6 +77,7 @@ Ahora sí, podremos instalar el paquete 'phpmyadmin' mediante el comando:
 Instalación de phpmyadmin
 
     sudo apt-get install phpmyadmin
+    sudo apt-get install php-mbstring php-gettext
 
 El programa de instalación crea un enlace simbólico en el DocumentRoot del servidor web para que la aplicación pueda ser accesible desde la url: http://ip-del-servidor-web/phpmyadmin/index.php. Si no se viera la aplicación en dicha url, quizás sea por algún aspecto de la configuración de apache. En tal caso, lo más sencillo sería mover la carpeta de phpmyadmin directamente dentro del DocumentRoot del servidor y asignar al usuario www-data que es el usuario con el que se ejecuta el apache, para que apache pueda acceder a dicha carpeta:
 
@@ -85,3 +86,31 @@ Colocar phpmyadmin en el servidor web y asignar propietario a www-data
     sudo mv /usr/share/phpmyadmin /var/www/html (en nuestro caso)
     sudo chmod 777 -R /var/www/html/phpmyadmin
 
+## Ubuntu 16.04 install php 5.6
+
+Add the PPA
+
+    sudo add-apt-repository ppa:ondrej/php
+
+Install your PHP Version
+
+    sudo apt-get update
+    sudo apt-get install php5.6
+
+You can install php5.6 modules too for example
+
+    sudo apt-get install php5.6-mbstring php5.6-mcrypt php5.6-mysql php5.6-xml
+
+## So, steps to success:
+
+vagrant ssh into your box
+    
+    sudo vim /etc/mysql/my.cnf
+
+Copy and paste 
+
+    [mysqld] sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION 
+
+    sudo service mysql restart to restart MySQL.
+
+Done!

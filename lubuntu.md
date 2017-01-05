@@ -56,3 +56,11 @@ y reemplazamos por los servidores correspondientes a nuestra zóna geográfica. 
 y verificamos con
 
 $ date
+
+## Formato de fecha y hora para linux
+
+    %A %d de %B del %Y %l:%M %p
+
+## Comentar linea de codigo para error de repositorio en linux 16.04
+
+    sudo nano /etc/apt/sources.list

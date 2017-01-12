@@ -10,12 +10,31 @@ http://www.citronlab.com/programacion/configuracion-de-un-entorno-de-desarrollo-
 Recomendado instalar:
 https://www.mozilla.org/es-ES/firefox/developer/
 
+Para que ionic funcione correctamente hay que agregar la ruta de java en el archivo .bashrc
+
+    cd /home/ricardo
+    sudo nano .bashrc
+
+    JAVA_HOME="/usr/lib/jvm/java-8-oracle/bin"
+    export JAVA_HOME
+    PATH=$PATH:$JAVA_HOME
+    export PATH
+
 Arranque
 Como siempre, tendremos que tener instalado Node.js. Una vez instalado, en una terminal ejecutamos:
 
     npm i -g cordova ionic
 
-Nota: Ruta para la ubicacion del SDK
+Nota: Ruta para la ubicacion del SDK se debe agregar en el archivo .profile
+    
+    cd /home/ricardo
+    sudo nano .profile
+    export ANDROID_HOME="/root/Android/Sdk"
+    export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+    export ANDROID_HOME=/root/Android/Sdk
+    export PATH=$PATH:/root/Android/Sdk/tools
+    export PATH=$PATH:/root/Android/Sdk/platform-tools
     
     export ANDROID_HOME=/home/linux/Android/Sdk
     export PATH=$PATH:/home/linux/Android/Sdk/tools

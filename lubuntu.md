@@ -64,3 +64,32 @@ $ date
 ## Comentar linea de codigo para error de repositorio en linux 16.04
 
     sudo nano /etc/apt/sources.list
+
+## Flash Player
+
+    sudo apt-get install flashplugin-installer
+    sudo apt-get update
+    sudo apt-get install adobe-flashplugin
+
+Eliminar versiones previas de Flash
+    
+    sudo apt purge --remove adobe-flashplugin flashplugin-installer pepperflashplugin-nonfree
+
+Flash Player v.21 para 64bit
+En 64 bits es mucho más fácil tener la versión más reciente de Flash. Esta versión instalará Pepper Flash Plugin. Antes solamente servía para Chromium, pero ahora por suerte también sirve para Firefox. De esta manera Firefox ya no se queda atrás con una versión precaría de Flash.
+
+    sudo apt install browser-plugin-freshplayer-pepperflash 
+
+Flash Player v.11 para 32bit
+Cada vez más la versión 32 bits se está volviendo más obsoleto y cada vez hay menos mantenimiento. Pepper Flash ya no funciona en la versión de 32 bits, pero hay muchos usuarios que todavía usan Chromium ya que Chrome no tiene soporte para la versión 32 bits de Ubuntu.
+
+    sudo apt install adobe-flashplugin
+
+Este paquete instalará la misma versión de Flash para Firefox y Chromium.
+
+Revisar tu versión de Flash
+Para los dos navegadores en la barra de direcciones pongan
+
+    Chromium – chrome://plugins
+
+    Firefox – about:plugins

@@ -95,7 +95,7 @@ En sublime text vamos a PREFERENCES->KEY BINDGINS-USER y remplazamos por el sigu
 
 El método más simple de la instalación es a través de la consola de texto sublime. La consola se accede a través de las teclas *Ctrl + `* contextual o en el menú View > Show Console. Una vez abierto, pegar el código Python apropiado para su versión de texto sublime en la consola.
 
-    import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+    https://packagecontrol.io/installation
 
 Ahora, cada vez que queramos buscar un paquete en el repositorio para instalarlo, pulsamos **CTRL+SHIFT+P** y escribimos Install Package. Entonces podremos buscar entre la gran cantidad de paquetes que existen para Sublime Text e instalarlos con un simple click.
 

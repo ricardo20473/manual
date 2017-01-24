@@ -93,3 +93,7 @@ Para los dos navegadores en la barra de direcciones pongan
     Chromium – chrome://plugins
 
     Firefox – about:plugins
+
+## MAKE: ORDEN NO ENCONTRADA (virtualbox)
+
+    sudo apt-get install build-essential

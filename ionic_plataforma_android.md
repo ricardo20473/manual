@@ -36,9 +36,9 @@ Nota: Ruta para la ubicacion del SDK se debe agregar en el archivo .profile
     export PATH=$PATH:/root/Android/Sdk/tools
     export PATH=$PATH:/root/Android/Sdk/platform-tools
     
-    export ANDROID_HOME=/home/linux/Android/Sdk
-    export PATH=$PATH:/home/linux/Android/Sdk/tools
-    export PATH=$PATH:/home/linux/Android/Sdk/platform-tools
+    export ANDROID_HOME=/home/ricardo/Android/Sdk
+    export PATH=$PATH:/home/ricardo/Android/Sdk/tools
+    export PATH=$PATH:/home/ricardo/Android/Sdk/platform-tools
     export ANDROID_EMULATOR_FORCE_32BIT=true
 
 

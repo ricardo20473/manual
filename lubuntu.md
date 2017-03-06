@@ -52,6 +52,10 @@ y reemplazamos por los servidores correspondientes a nuestra zóna geográfica. 
 4 – Reiniciar el servicio
 
     $ sudo service ntp restart
+    
+    apt-get update
+    apt-get install ntpdate
+    sudo ntpdate -u ntp.ubuntu.com
 
 y verificamos con
 

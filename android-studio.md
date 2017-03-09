@@ -29,3 +29,21 @@ Entramos a la terminal y tecleamos lo siguiente:
     sudo apt-get install android-studio lib32stdc++6 mesa-utils
     cd /opt/android-studio/bin
     ./studio.sh
+
+
+# Crear icono o lanzador de android studio en linux
+
+Crear un archivo que se llame AndroidStudio.desktop y colocarlo en la ruta /usr/share/applications
+
+    [Desktop Entry]
+    Version=2.3
+    Type=Application
+    Name=Android Studio
+    Comment=IDE Android Studio
+    Exec="/opt/android-studio/bin/studio.sh" %f
+    Icon=/opt/android-studio/bin/studio.png
+    Terminal=false
+    Categories=Development;IDE;
+    StartupNotify=true
+    StartupWMClass=jetbrains-android-studio
+    Name[en_GB]=android-studio.desktop

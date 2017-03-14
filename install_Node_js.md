@@ -4,7 +4,7 @@ Ubuntu 14.04 contiene una versión de Node.js en sus repositorios por defecto qu
 
 Con el fin de obtener esta versión, sólo tenemos que utilizar el gestor de paquetes apt. Debemos actualizar nuestro índice local de paquetes antes y después instalar desde los repositorios:
     
-    wget -qO- https://deb.nodesource.com/setup_4.x | sudo bash -
+    wget -qO- https://deb.nodesource.com/setup_6.x | sudo bash -
     sudo apt-get update
     sudo apt-get install nodejs
 

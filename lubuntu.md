@@ -4,6 +4,7 @@
 
     sudo apt-get install pulseaudio
     sudo apt-get install pavucontrol pavumeter
+    sudo apt-get install indicator-sound
 
 ## Tema Numix
 

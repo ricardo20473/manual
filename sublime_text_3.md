@@ -22,13 +22,13 @@ Primero editaremos la configuración de user: en sublime text vamos a PREFERENCE
         // Cuadrado del minimapa: Esta propiedad nos permite activar el cuadrado del mini mapa que nos muestra donde estamos, por lo general se muestra cuando pasamos el mouse por el minimapa, pero con esta propiedad, siempre sera visible.
         "always_show_minimap_viewport": true,
         // Nombre de las carpetas en negritas: Esta propiedad,lo que hace es muestrar el nombre de las carpetas en negrita y el el nombre de los archivos los muestra normal, permitiendo identificar mas rapido que es un archivo y que es una carpeta.
-        "bold_folder_labels": true,
+        "bold_folder_labels": false,
         //Ocultar trozo de codigo: Esta propiedad nos muestra al lado del numero de la linea, una flecha que nos permite ocultar un bloque de codigo, como ejemplo seria un div y su contenido.
         "fade_fold_buttons": false,
         //Tamaño de fuente en el sublime text
-        "font_size": 14,
+        "font_size": 11,
         //para que tome las tab mas pequeñas
-        "tab_size": 1,
+        "tab_size": 4,
         //Resaltar línea actual: Esta propiedad permite que se resalte la línea actualmente seleccionada.
         "highlight_line": true,
         //Para identifcar aquellos ficheros del proyecto actual que aún no han sido salvados, ésta opción resaltará aquellas pestañas de los archivos modificados dentro del programa
@@ -40,9 +40,7 @@ Primero editaremos la configuración de user: en sublime text vamos a PREFERENCE
         //Guarda los archivos cuando el programa pierde el foco de la aplicación. Te ahorrarás muchos CTRL+S y la posibilidad olvidarte de guardarlo cuando deberías.
         "save_on_focus_lost": true,
         //El scroll horizontal puede ser un dolor de cabeza. Con la opción word wrap activada, el texto flotará hasta el tamaño de tu pantalla e impedirá que tengas que hacer scroll horizontal.(es como el ajuste de linea que aplicamos en el bloc de notas)
-        "word_wrap": true,
-        //convierte el tamaño del tab mas pequeño solo en la visualizacion de sublime
-        "tab_size": 1,
+        "word_wrap": false,
         //convierte los tab por espacios
         "translate_tabs_to_spaces": true
     }

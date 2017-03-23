@@ -102,3 +102,14 @@ Para los dos navegadores en la barra de direcciones pongan
 ## MAKE: ORDEN NO ENCONTRADA (virtualbox)
 
     sudo apt-get install build-essential
+
+Encontrar un nombre de la VM (Máquina Virtual) - ejecución de VB (virtualbox), seleccione la máquina virtual, abra configuración, en la pestaña "General" compruebe el nombre, por ejemplo, en mi caso ubuntu 12.04 32bit
+
+En Windows, inicie un intérprete de línea de comandos, vaya a la C:\Program Files\Oracle de carpeta y haga clic en virtualbox a seleccionar, a continuación, la celebración de la izquierda de la tecla shift, hacer un ratón botón derecho del ratón y seleccione "Abrir ventana de comandos aquí" en el menú, el intérprete tiene que estar funcionando
+Pegue el siguiente comando (cambiar el nombre de máquina virtual a tu nombre!): 
+
+VBoxManage setextradata "ubuntu 12.04 32bit" "VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled" 1
+
+Finalmente, inicio de ubuntu cliente y establecer la hora y la fecha manualmente.
+
+Fuente: https://www.enmimaquinafunciona.com/pregunta/30657/como-manualmente-configurar-la-hora-del-sistema-en-virtualbox

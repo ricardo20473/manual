@@ -101,6 +101,22 @@ You can install php5.6 modules too for example
 
     sudo apt-get install php5.6-mbstring php5.6-mcrypt php5.6-mysql php5.6-xml
 
+## Switch PHP version:
+
+From php5.6 to php7.0:
+	Apache:
+	sudo a2dismod php5.6 ; sudo a2enmod php7.0 ; sudo service apache2 restart
+	
+	CLI:
+	sudo update-alternatives --set php /usr/bin/php7.0
+
+From php7.0 to php5.6:
+	Apache:
+	sudo a2dismod php7.0 ; sudo a2enmod php5.6 ; sudo service apache2 restart
+	
+	CLI:
+	sudo update-alternatives --set php /usr/bin/php5.6
+
 ## So, steps to success:
 
 vagrant ssh into your box

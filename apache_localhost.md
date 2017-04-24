@@ -100,6 +100,11 @@ Install your PHP Version
 You can install php5.6 modules too for example
 
     sudo apt-get install php5.6-mbstring php5.6-mcrypt php5.6-mysql php5.6-xml
+    apt-get install php5.6-dev php5.6-mcrypt php5.6-curl php5.6-mysql php5.6-mongo php5.6-memcached php5.6-xdebug php5.6-apc php5.6-imagick php5.6-gd php5.6-geoip gcc git libpcre3-dev php5.6-fpm
+
+    sudo apt-get install php-mbstring php-mcrypt php-mysql php-xml
+    sudo apt-get install php-dev php-mcrypt php-curl php-mysql php-mongo php-memcached php-xdebug php7.0-apc php-imagick php-gd php-geoip gcc git libpcre3-dev php-fpm
+
 
 ## Switch PHP version:
 

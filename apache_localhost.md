@@ -102,8 +102,8 @@ You can install php5.6 modules too for example
     sudo apt-get install php5.6-mbstring php5.6-mcrypt php5.6-mysql php5.6-xml
     apt-get install php5.6-dev php5.6-mcrypt php5.6-curl php5.6-mysql php5.6-mongo php5.6-memcached php5.6-xdebug php5.6-apc php5.6-imagick php5.6-gd php5.6-geoip gcc git libpcre3-dev php5.6-fpm
 
-    sudo apt-get install php-mbstring php-mcrypt php-mysql php-xml
-    sudo apt-get install php-dev php-mcrypt php-curl php-mysql php-mongo php-memcached php-xdebug php7.0-apc php-imagick php-gd php-geoip gcc git libpcre3-dev php-fpm
+    sudo apt-get install php7.1-mbstring php7.1-mcrypt php7.1-mysql php7.1-xml
+    sudo apt-get install php7.1-dev php7.1-mcrypt php7.1-curl php7.1-mysql php7.1-mongo php7.1-memcached php7.1-xdebug php7.1-apc php7.1-imagick php7.1-gd php7.1-geoip gcc git libpcre3-dev php7.1-fpm
 
 
 ## Switch PHP version:

@@ -113,4 +113,4 @@ Note: Para activar SublimeLinter-jshint, se debe asegurar que jshint está insta
 
     1. Install Node.js (and npm on Linux).
     2. Install jshint by typing the following in a terminal:
-        npm install -g jshint
+        sudo npm install -g jshint

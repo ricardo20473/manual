@@ -4,7 +4,7 @@ Phalcon es una extensión en C, así que necesitarás descargar un binario para 
 
 Para instalar Phalcon en Ubuntu es necesario seguir estos pasos:
 
-    sudo apt-get install php5-dev libpcre3-dev gcc make php5-mysql
+    sudo apt-get install php7.1-dev libpcre3-dev gcc make php7.1-mysql
     sudo apt-add-repository ppa:phalcon/stable
     sudo apt-get update
     sudo apt-get install php7.1-phalcon

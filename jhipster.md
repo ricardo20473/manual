@@ -48,8 +48,8 @@ Crear un archivo que se llame EclipseSpring.desktop y colocarlo en la ruta /usr/
     Type=Application
     Name=Eclipse Spring
     Comment=IDE Eclipse Spring
-    Exec="/home/ricardo/IDE/sts-bundle/sts-3.8.4.RELEASE/STS"
-    Icon=/home/ricardo/IDE/sts-bundle/sts-3.8.4.RELEASE/icon.xpm
+    Exec="/home/ricardo/Java/sts-bundle/sts-3.8.4.RELEASE/STS"
+    Icon=/home/ricardo/Java/sts-bundle/sts-3.8.4.RELEASE/icon.xpm
     Terminal=false
     Categories=Development;IDE;Java;
     StartupNotify=true

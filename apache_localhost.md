@@ -83,7 +83,7 @@ El programa de instalación crea un enlace simbólico en el DocumentRoot del ser
 
 Colocar phpmyadmin en el servidor web y asignar propietario a www-data
 
-    sudo mv /usr/share/phpmyadmin /var/www/html (en nuestro caso)
+    sudo cp /usr/share/phpmyadmin /var/www/html (en nuestro caso)
     sudo chmod 777 -R /var/www/html/phpmyadmin
 
 ## Ubuntu 16.04 install php 5.6

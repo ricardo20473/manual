@@ -7,6 +7,6 @@
         \q
         exit
     sudo apt-get install pgadmin3
-    sudo apt-get install php5-pgsql
+    sudo apt-get install php7.1-pgsql
 
 

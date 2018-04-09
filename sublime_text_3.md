@@ -58,7 +58,8 @@ Primero editaremos la configuración de user: en sublime text vamos a PREFERENCE
         //El scroll horizontal puede ser un dolor de cabeza. Con la opción word wrap activada, el texto flotará hasta el tamaño de tu pantalla e impedirá que tengas que hacer scroll horizontal.(es como el ajuste de linea que aplicamos en el bloc de notas)
         "word_wrap": false,
         //convierte los tab por espacios
-        "translate_tabs_to_spaces": true
+        "translate_tabs_to_spaces": true,
+        "detect_indentation": true
     }
 
 # Ahora editaremos la configuración del teclado de user

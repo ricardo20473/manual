@@ -25,7 +25,14 @@ Para poder configurar nuestro servidor se usa la siguiente sintaxis:
 
 Ahora que ya tenemos nuestro servidor web funcionando y activo, es hora de instalar MySQL. MySQL es un gestor de base de datos. Básicamente organizará y proveerá de acceso a todas las bases de datos donde nuestros sitios guarden información. De nuevo, usaremos apt para instalar nuestro servicio. Esta vez también instalaremos algunos paquetes más que nos ayudarán que nuestros componentes se comuniquen entre ellos:
 
-    sudo apt-get install mysql-server php5-mysql
+    sudo apt-get install mysql-server
+    sudo mysql_secure_installation
+    sudo mysql
+    SELECT user,authentication_string,plugin,host FROM mysql.user;
+    ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+    FLUSH PRIVILEGES;
+    SELECT user,authentication_string,plugin,host FROM mysql.user;
+    exit
 
 Durante la instalación el servidor de MySQL te solicitará que elijas una contraseña para tu usuario root. Esta es la cuenta administrativa de MySQL que contiene todos los privilegios para un usuario.  Asegurate de escribir una contraseña y no la olvides.
 

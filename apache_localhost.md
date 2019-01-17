@@ -146,3 +146,9 @@ Copy and paste
     sudo service mysql restart to restart MySQL.
 
 Done!
+
+## MySQL serve remote
+
+    /etc/mysql/mysql.conf.d/mysqld.cnf
+    service mysql restart
+    netstat -tap | grep mysql

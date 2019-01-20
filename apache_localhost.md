@@ -110,8 +110,8 @@ You can install php5.6 modules too for example
     sudo apt-get install php7.1-dev php7.1-mcrypt php7.1-curl php7.1-mysql php7.1-mongo php7.1-memcached php7.1-xdebug php7.1-apc php7.1-imagick php7.1-gd php7.1-geoip gcc git libpcre3-dev php7.1-fpm -y
 
     sudo apt-get install php7.2
-    sudo apt-get install php7.2-mbstring php7.2-mcrypt php7.2-mysql php7.2-xml -y
-    sudo apt-get install php7.2-dev php7.2-mcrypt php7.2-curl php7.2-mysql php7.2-mongo php7.2-memcached php7.2-xdebug php7.2-apc php7.2-imagick php7.2-gd php7.2-geoip gcc git libpcre3-dev php7.2-fpm -y
+    sudo apt-get install php7.2-mbstring php7.2-mysql php7.2-xml -y
+    sudo apt-get install php7.2-dev php7.2-curl php7.2-mysql php7.2-mongo php7.2-memcached php7.2-xdebug php7.2-apc php7.2-imagick php7.2-gd php7.2-geoip gcc git libpcre3-dev php7.2-fpm -y
 
 
 ## Switch PHP version:

@@ -52,6 +52,9 @@ Reiniciamos el servidor apache:
 sudo /etc/init.d/apache2 restart
 
 # Permisos en Gmail
+
 https://www.google.com/settings/u/1/security/lesssecureapps
+
 https://accounts.google.com/b/0/DisplayUnlockCaptcha
+
 https://security.google.com/settings/security/activity?hl=en&pli=1

@@ -125,6 +125,7 @@ Ahora, cada vez que queramos buscar un paquete en el repositorio para instalarlo
 * SFTP
 * Aurora Scheme (tema)
 * Pretty Json
+* Alignment
 * SublimeLinter-contrib-tslint
 
 Note: Para activar SublimeLinter-jshint, se debe asegurar que jshint está instalado en su sistema. Para instalar jshint, haga lo siguiente:

@@ -67,44 +67,46 @@ Primero editaremos la configuración de user: en sublime text vamos a PREFERENCE
 En sublime text vamos a PREFERENCES->KEY BINDGINS-USER y remplazamos por el siguiente codigo.
 
     [
-        // ocultar side bar solo con ctrl+b
-        { "keys": ["ctrl+b"], "command": "toggle_side_bar" },
-        {//si utilizan livereload(plugin de sublime text) les permitira recargar la pagina presionando el comando a continuación
-        "keys": ["ctrl+shift+r"], "command": "browser_refresh", "args": {
-                "auto_save": true,
-                "delay": 0.0,
-                "activate_browser": true,
-                "browser_name" : "all"
-            }
-        },
-        /*cerrar la plegar actual*/
-        { "keys": ["ctrl+-"], "command": "fold" },
-        /*abrir las plegar actual*/
-        { "keys": ["ctrl++"], "command": "unfold" },
-       
-        { "keys": ["ctrl+shift+alt+-"], "command": "fold_tag_attributes" },
-        /*abrir TODAS las plegar actual*/
-        { "keys": ["ctrl+shift+alt++"], "command": "unfold_all" },
-        { //para realizar comentario de una linea
-        "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
-        {//para realizar comentarios de bloque
-        "keys": ["ctrl+shift+7"], "command": "toggle_comment", "args": { "block": true } },
-        {//incrementar el tamaño de fuente en sublime text
-        "keys": ["ctrl+shift++"], "command": "increase_font_size" },
-        {//incrementar el tamaño de fuente en sublime text
-        "keys": ["ctrl+="], "command": "increase_font_size" },
-        {//decrementar el tamaño de fuente en sublime text
-        "keys": ["ctrl+shift+-"], "command": "decrease_font_size" },
-        {//mostrar el auto completado
-        "keys": ["ctrl+space"], "command": "auto_complete" },
-        { "keys": ["ctrl+space"], "command": "replace_completion_with_auto_complete", "context":
-            [
-                { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
-                { "key": "auto_complete_visible", "operator": "equal", "operand": false },
-                { "key": "setting.tab_completion", "operator": "equal", "operand": true }
-            ]
+    // ocultar side bar solo con ctrl+b
+    { "keys": ["ctrl+b"], "command": "toggle_side_bar" },
+    {//si utilizan livereload(plugin de sublime text) les permitira recargar la pagina presionando el comando a continuación
+    "keys": ["ctrl+shift+r"], "command": "browser_refresh", "args": {
+            "auto_save": true,
+            "delay": 0.0,
+            "activate_browser": true,
+            "browser_name" : "all"
         }
-    ]
+    },
+    /*cerrar la plegar actual*/
+    { "keys": ["ctrl+-"], "command": "fold" },
+    /*abrir las plegar actual*/
+    { "keys": ["ctrl++"], "command": "unfold" },
+   
+    { "keys": ["ctrl+shift+alt+-"], "command": "fold_tag_attributes" },
+    /*abrir TODAS las plegar actual*/
+    { "keys": ["ctrl+shift+alt++"], "command": "unfold_all" },
+    { //para realizar comentario de una linea
+    "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
+    {//para realizar comentarios de bloque
+    "keys": ["ctrl+shift+7"], "command": "toggle_comment", "args": { "block": true } },
+    {//incrementar el tamaño de fuente en sublime text
+    "keys": ["ctrl+shift++"], "command": "increase_font_size" },
+    {//incrementar el tamaño de fuente en sublime text
+    "keys": ["ctrl+="], "command": "increase_font_size" },
+    {//decrementar el tamaño de fuente en sublime text
+    "keys": ["ctrl+shift+-"], "command": "decrease_font_size" },
+    {//mostrar el auto completado
+    "keys": ["ctrl+space"], "command": "auto_complete" },
+    { "keys": ["ctrl+space"], "command": "replace_completion_with_auto_complete", "context":
+        [
+            { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "setting.tab_completion", "operator": "equal", "operand": true }
+        ]
+    },
+    { "keys": ["shift+alt+f"], "command": "reindent"},
+    { "keys": ["ctrl+f5"], "command": "refresh_folder_list" }
+]
 
 # Package Control
 
@@ -126,6 +128,7 @@ Ahora, cada vez que queramos buscar un paquete en el repositorio para instalarlo
 * Aurora Scheme (tema)
 * Pretty Json
 * Alignment
+* SCSS
 * SublimeLinter-contrib-tslint
 
 Note: Para activar SublimeLinter-jshint, se debe asegurar que jshint está instalado en su sistema. Para instalar jshint, haga lo siguiente:

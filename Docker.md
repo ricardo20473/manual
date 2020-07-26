@@ -67,14 +67,13 @@ https://www.docker.com/get-started
 	chown -R mysql:mysql /var/lib/mysql //si no funciona los servicios de mysql
 	cp -R /usr/share/phpmyadmin /var/www/html //mover la carpeta phpmyadmin a la carpeta html
 
-<<<<<<< HEAD
 ## Configuraciones node y npm
 
     chmod -R 777 app/
     git config --global url.https://github.com/.insteadOf git://github.com/
     npm cache clean --force
     npm cache verify
-=======
+
 # Docker Compose 
 
 Crear archivo docker-compose.yml y agregar el siguiente codigo en el archivo
@@ -98,4 +97,3 @@ Iniciar Docker
     docker-compose start
     docker-compose stop
 
->>>>>>> 2500afdb799d38a779a54b47a922b95fb583b1a6

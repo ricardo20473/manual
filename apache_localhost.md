@@ -30,6 +30,7 @@ Ahora que ya tenemos nuestro servidor web funcionando y activo, es hora de insta
     sudo mysql
     SELECT user,authentication_string,plugin,host FROM mysql.user;
     ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+	uninstall plugin validate_password;
     FLUSH PRIVILEGES;
     SELECT user,authentication_string,plugin,host FROM mysql.user;
     exit
@@ -97,6 +98,7 @@ Colocar phpmyadmin en el servidor web y asignar propietario a www-data
 
 Add the PPA
 
+	sudo apt install -y software-properties-common
     sudo add-apt-repository ppa:ondrej/php
 
 Install your PHP Version
@@ -110,6 +112,7 @@ You can install php5.6 modules too for example
     sudo apt-get install php7.1-dev php7.1-mcrypt php7.1-curl php7.1-mysql php7.1-mongo php7.1-memcached php7.1-xdebug php7.1-apc php7.1-imagick php7.1-gd php7.1-geoip gcc git libpcre3-dev php7.1-fpm -y
 
     sudo apt-get install php7.2
+	sudo apt install php7.2 libapache2-mod-php
     sudo apt-get install php7.2-mbstring php7.2-mysql php7.2-xml -y
     sudo apt-get install php7.2-dev php7.2-curl php7.2-mysql php7.2-mongo php7.2-memcached php7.2-xdebug php7.2-apc php7.2-imagick php7.2-gd php7.2-geoip gcc git libpcre3-dev php7.2-fpm -y
 

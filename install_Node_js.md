@@ -38,3 +38,15 @@ Manually change npm’s default directorys
 6. To test your new configuration, install a package globally without using sudo:
 
     npm install -g jshint
+    npm rebuild node-sass //restaurar
+
+7. Solutions
+
+    First download Python 2, then set the version of Python that node uses like this:
+
+    npm config set python /usr/bin/python2.7
+    npm install — global — production windows-build-tools
+    npm install — global node-gyp
+    npm install
+
+    npm rebuild node-sass //restaurar

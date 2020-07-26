@@ -59,3 +59,10 @@ https://www.docker.com/get-started
 	service mysql restart
 	chown -R mysql:mysql /var/lib/mysql //si no funciona los servicios de mysql
 	cp -R /usr/share/phpmyadmin /var/www/html //mover la carpeta phpmyadmin a la carpeta html
+
+## Configuraciones node y npm
+
+    chmod -R 777 app/
+    git config --global url.https://github.com/.insteadOf git://github.com/
+    npm cache clean --force
+    npm cache verify

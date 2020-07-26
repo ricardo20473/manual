@@ -3,6 +3,13 @@
 Instalar Docker descargando la aplicación desde la web 
 https://www.docker.com/get-started
 
+## Docker Machine
+
+    // Crear maquina virtual con virtualbox
+    docker-machine create -d virtualbox --virtualbox-memory 4096 dev
+    docker-machine dev start
+    docker-machine dev stop
+
 ## Iniciar Docker
 
     // Descargar imagen ubuntu
@@ -60,9 +67,35 @@ https://www.docker.com/get-started
 	chown -R mysql:mysql /var/lib/mysql //si no funciona los servicios de mysql
 	cp -R /usr/share/phpmyadmin /var/www/html //mover la carpeta phpmyadmin a la carpeta html
 
+<<<<<<< HEAD
 ## Configuraciones node y npm
 
     chmod -R 777 app/
     git config --global url.https://github.com/.insteadOf git://github.com/
     npm cache clean --force
     npm cache verify
+=======
+# Docker Compose 
+
+Crear archivo docker-compose.yml y agregar el siguiente codigo en el archivo
+
+    version: '3'
+    services:
+      web:
+        image: 'ubuntu:18.04'
+        ports:
+          - '8080:81'
+          - '3000:3000'
+          - '4200:4200'
+        stdin_open: true
+        tty: true
+
+Iniciar Docker
+
+    docker-compose create
+    docker-compose up
+    docker-compose up -d //Actualizar docker con las configuraciones del archivos
+    docker-compose start
+    docker-compose stop
+
+>>>>>>> 2500afdb799d38a779a54b47a922b95fb583b1a6
